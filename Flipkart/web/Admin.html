@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>ADMIN DASHBOARD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Admin.css"/>
+    </head>
+    <body>
+        <div id="Container">
+            <h1>WELCOME TO DASHBOARD!</h1>
+<!--            ADD BUTTON-->
+            <div class="ClickButton">
+                <button class="button1">Add Product</button>
+                <button class="button2">Delete Product</button>
+                <button class="button3">Update Product</button>
+                <form action="submit-form" method="post">
+                    <!-- Form fields here -->
+
+                    <!-- Your button with type="submit" -->
+                    <button class="button4"  type="submit">Check Product</button>
+                  </form>
+            </div>
+           
+<!--           Add Product Form-->
+           <div class="AddForm">
+               <form class="formp" method="post" action="addproduct">
+                   <h2>Add Product</h2>
+                        <div>
+                            <label for="productname">Product Name:</label>
+                            <input type="text" id="productname" name="productname" required>
+                        </div>
+                        <div>
+                            <label for="productprice">Product Price:</label>
+                            <input type="text" id="productprice" name="productprice" required>
+                        </div>
+                        <div>
+                            <label for="category">Product Category:</label>
+                            <input type="text" id="category" name="category" required>
+                        </div>
+                         <div>
+                            <label for="companyname">Product CompanyName:</label>
+                            <input type="text" id="companyname" name="companyname" required>
+                        </div>
+                        <div>
+                            <label for="description">Product Description:</label>
+                            <textarea id="description" name="description" rows="4" required></textarea>
+                        </div>
+                         <div class="image1">
+                            <label for="productimage">Product Image:</label>
+                            <input type="file" id="productimage" name="productimage" required>
+                        </div>
+                        <div class="SubmitButton">
+                            <button type="submit">Add Product</button>
+                        </div>
+               </form>
+               
+           </div>
+            <div class="UpdateForm">
+               <form method="post" action="updateproduct">
+                   <h2>Update Product</h2>
+                        <div>
+                            <label for="productname">Product ID:</label>
+                            <input type="text" id="productname" name="productid" required>
+                        </div>
+                        <div>
+                            <label for="productcolumn">Column Name:</label>
+                            <input type="text" id="productprice" name="productcolumn" required>
+                        </div>
+                        <div>
+                            <label for="Productvalue">Value:</label>
+                            <input type="text" id="category" name="Productvalue" required>
+                        </div>
+                        
+                        <div>
+                            <button type="submit">Update Product</button>
+                        </div>
+               </form>
+               
+           </div>
+            
+            
+        </div>
+        <script src="Admin.js"></script>
+    </body>
+</html>

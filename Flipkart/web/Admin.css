@@ -1,0 +1,129 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 25 Jun 2024, 11:26:30 am
+    Author     : ACCESS
+*/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Container{
+    height: 100vh;
+    background-image: linear-gradient(lightsalmon, lightblue);
+    overflow-x: hidden;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-image: linear-gradient(lightslategray,lightpink);
+    position: relative;
+    bottom: 20px;
+}
+.ClickButton{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: orange;
+    height: 50px;
+    position: relative;
+    bottom: 40px;
+    
+}
+.button1,.button2,.button3,.button4{
+    margin: 10px;
+    width: 120px;
+    height: 30px;
+    background-image: linear-gradient(lightslategray,lightpink);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button1:hover{
+   background-image: linear-gradient(green,pink);
+    color: white;
+    font-weight: bold;
+}
+.button2:hover{
+    background-image: linear-gradient(green,pink);
+    color: white;
+    font-weight: bold;
+}
+.button3:hover{
+     background-image: linear-gradient(green,pink);
+    color: white;
+    font-weight: bold;
+}
+.button4:hover{
+     background-image: linear-gradient(green,pink);
+    color: white;
+    font-weight: bold;
+}
+/*   .formp {
+            background-color: #ffffff;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            bottom: 20px;
+        }*/
+        h2 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+        }
+        
+        .SubmitButton {
+           
+            justify-content: center;
+            display: flex;
+        }
+        .SubmitButton button{
+             background-color:linen;
+             height: 30px;
+             width: 150px;
+             border-radius: 5px;
+             font-size: medium;
+             font-weight: bold;
+             color: brown;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        
+   .UpdateForm{
+        display: none;
+    }
+    
+    .image1{
+        position: relative;
+        bottom: 10px;
+    }
